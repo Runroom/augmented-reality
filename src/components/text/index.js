@@ -15,7 +15,7 @@ const Text = () => {
     }
 
     setText(temp);
-  });
+  }, []);
 
   return (
     <a-marker preset="hiro">

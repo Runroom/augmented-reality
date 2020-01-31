@@ -1,13 +1,15 @@
 import React from 'react';
 
+import Box from '../box';
 import Text from '../text';
 import SceneWrapper from './styles';
 
-const Scene = ({ componentType }) => {
-  const iconType = {
+const Scene = ({ component }) => {
+  const componentType = {
+    box: Box,
     text: Text
   };
-  const Component = iconType[componentType];
+  const Component = componentType[component];
 
   return (
     <SceneWrapper>

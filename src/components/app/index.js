@@ -1,9 +1,9 @@
 import React from "react";
 
-import Scanner from "../../pages/scanner";
+import Scene from "../../components/scene";
 
 import './App.css';
 
-const App = () => <Scanner />;
+const App = () => <Scene component="text" />;
 
 export default App;

@@ -1,28 +1,24 @@
-import React from "react";
-
-import { formatDateTime } from '../../utils/helpers';
+import React, { useEffect, useState } from "react";
 
 const WRAP_COUNT = 25;
 const WIDTH = 6;
+const MAX_LENGTH = 3;
 
-const RoomInfo = ({ room: { marker, list } }) => {
-  let text = '';
+const Text = () => {
+  const [text, setText] = useState('');
 
-  list.forEach(({ node }, i) => {
-    const {
-      session_name,
-      session_datetime,
-      session_category
-    } = node;
+  useEffect(() => {
+    let temp = '';
 
-    console.log(session_name, formatDateTime(session_datetime));
+    for (let i = 0; i <= MAX_LENGTH; i++) {
+      temp = `${i + 1}. Line ${i + 1} of text. ${i < MAX_LENGTH ? '\n' : ''}`;
+    }
 
-    text += `${i < 10 ? '0' : ''}${i + 1}. `;
-    text += `${formatDateTime(session_datetime)} - ${session_name} - ${i} ${i !== list.length ? '\n' : ''}`;
+    setText(temp);
   });
 
   return (
-    <a-marker preset={marker}>
+    <a-marker preset="hiro">
       <a-entity
         scale="2 2 2"
         rotation="-90 0 0"
@@ -43,6 +39,6 @@ const RoomInfo = ({ room: { marker, list } }) => {
       </a-entity>
     </a-marker>
   );
-};
+}
 
-export default RoomInfo;
+export default Text;

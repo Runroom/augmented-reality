@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Box from '../box';
 import Text from '../text';
 import Image from '../image';
-// import Model from '../model';
+import Model from '../model';
 
 import { capitalize } from '../../utils/helpers'
 import history from '../../utils/history'
@@ -21,7 +21,7 @@ class App extends React.Component {
       box: Box,
       text: Text,
       image: Image,
-      // model: Model
+      model: Model
     };
     return (
       <AppWrapper>

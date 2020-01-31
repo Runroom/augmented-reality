@@ -1,0 +1,19 @@
+.header {
+    background: white;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 20px 40px;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+
+/* @font-face {
+  font-family: 'Roobert';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roobert'), local('Roobert'),
+       url('fonts/Roobert-Medium.woff2') format('woff2'),
+       url('fonts/Roobert-Medium.woff') format('woff');
+} */

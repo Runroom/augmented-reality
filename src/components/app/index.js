@@ -1,9 +1,28 @@
 import React from "react";
 
-import Scene from "../../components/scene";
-
 import './App.css';
 
-const App = () => <Scene component="text" />;
+import Box from '../box';
+import Text from '../text';
+import Image from '../image';
+import SceneWrapper from './styles';
+
+const App = ({ component }) => {
+  const componentType = {
+    box: Box,
+    text: Text,
+    image: Image
+  };
+  const Component = componentType[component];
+
+  return (
+    <SceneWrapper>
+      <a-scene embedded arjs="trackingMethod: best;">
+        <Component />
+        <a-camera-static />
+      </a-scene>
+    </SceneWrapper>
+  );
+};
 
 export default App;

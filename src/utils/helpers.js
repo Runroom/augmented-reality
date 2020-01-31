@@ -4,4 +4,8 @@ const formatDateTime = datetime => {
     return `${time.getHours()}:${time.getMinutes()}`;
 }
 
-export { formatDateTime };
+const capitalize = string => {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+export { formatDateTime, capitalize };

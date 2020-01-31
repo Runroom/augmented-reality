@@ -1,28 +1,50 @@
 import React from "react";
 
-import './App.css';
-
 import Box from '../box';
 import Text from '../text';
 import Image from '../image';
-import SceneWrapper from './styles';
 
-const App = ({ component }) => {
-  const componentType = {
-    box: Box,
-    text: Text,
-    image: Image
+import { capitalize } from '../../utils/helpers'
+import AppWrapper, { Scene } from './styles';
+
+class App extends React.Component {
+  state = {
+    component: 'text'
   };
-  const Component = componentType[component];
 
-  return (
-    <SceneWrapper>
-      <a-scene embedded arjs="trackingMethod: best;">
-        <Component />
-        <a-camera-static />
-      </a-scene>
-    </SceneWrapper>
-  );
-};
+  render() {
+    const { component } = this.state;
+
+    const componentType = {
+      box: Box,
+      text: Text,
+      image: Image
+    };
+    const Component = componentType[component];
+
+    return (
+      <AppWrapper>
+        <select
+          className="component-selector"
+          onChange={event => {
+            const component = event.currentTarget.value;
+
+            this.setState({ component })
+          }}
+        >
+          {Object.keys(componentType).map(key => {
+            return <option value={key}>{capitalize(key)}</option>;
+          })}
+        </select>
+        <Scene>
+          <a-scene embedded arjs="trackingMethod: best;">
+            <Component />
+            <a-camera-static />
+          </a-scene>
+        </Scene>
+      </AppWrapper>
+    );
+  }
+}
 
 export default App;

@@ -2,12 +2,14 @@ import React from 'react';
 
 import Box from '../box';
 import Text from '../text';
+import Image from '../image';
 import SceneWrapper from './styles';
 
 const Scene = ({ component }) => {
   const componentType = {
     box: Box,
-    text: Text
+    text: Text,
+    image: Image
   };
   const Component = componentType[component];
 

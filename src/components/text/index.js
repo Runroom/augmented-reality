@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 const WRAP_COUNT = 25;
 const WIDTH = 6;
-const MAX_LENGTH = 3;
+const MAX_LINES = 3;
 
 const Text = () => {
   const [text, setText] = useState('');
@@ -10,8 +10,8 @@ const Text = () => {
   useEffect(() => {
     let temp = '';
 
-    for (let i = 0; i <= MAX_LENGTH; i++) {
-      temp = `${i + 1}. Line ${i + 1} of text. ${i < MAX_LENGTH ? '\n' : ''}`;
+    for (let i = 0; i <= MAX_LINES; i++) {
+      temp = `${i + 1}. Line ${i + 1} of text. ${i < MAX_LINES ? '\n' : ''}`;
     }
 
     setText(temp);

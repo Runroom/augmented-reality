@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 
 const AppWrapper = styled.div`
-  height: 100vh;
-  width: 100vw;
-
   .component-selector {
     position: absolute;
     z-index: 10;

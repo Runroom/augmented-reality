@@ -35,4 +35,4 @@ ABCČĆDĐEFGHIJKLMNOPQRSŠTUVWXYZŽabcčćdđefghijklmnopqrsštuvwxyzžАБВГ
 ---
 
 ## References
-For more detailed and specific reading see the [documentation](https://aframe.io/docs/1.0.0/primitives/a-text.html#sidebar)
+For more detailed and specific reading see the [documentation](https://aframe.io/docs/1.0.0/primitives/a-text.html)

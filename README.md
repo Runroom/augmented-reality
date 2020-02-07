@@ -1,19 +1,7 @@
 # Augmented Reality - AR.js
 
 An _augmented reality_ component library created using the AR.js library, based on Three.js.
-
 The project is built on React.js using _create-react-app_
-
-The marker used to trigger this components is the default _Hiro_ marker.
-
-![Image of Hiro marker](https://runroom.github.io/agumented-reality/images/hiro.png)
-
-## Installation and usage
-Clone the repo and run the following commands. The app will run on port 3000 by default:
-```
-yarn install
-yarn start
-```
 
 ## Components
 * Box
@@ -21,8 +9,19 @@ yarn start
 * Text
 * 3D Model
 
+## Marker
+The marker used to trigger this components is the default _Hiro_ marker.
+<img src="public/images/hiro.png" width="300">
+
 ## Demo
 [https://runroom.github.io/agumented-reality/](https://runroom.github.io/agumented-reality/)
+
+## Installation and usage
+Clone the repo and run the following commands. The app will run on port 3000 by default:
+```
+yarn install
+yarn start
+```
 
 ## References and links
 * [AR.js](https://github.com/jeromeetienne/ar.js)

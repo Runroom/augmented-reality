@@ -22,12 +22,13 @@ const Model = ({ debug }) => (
   <a-scene embedded arjs={`debugUIEnabled: ${debug}; trackingMethod: best;`}>
     <a-assets>
       <a-asset-item id="model" src="./models/runroom/model.obj"></a-asset-item>
-      <a-asset-item id="texture" src="./images/image.png"></a-asset-item>
+      {/* <a-asset-item id="texture" src="./images/image.png"></a-asset-item> */}
     </a-assets>
     <a-marker preset="hiro">
       <a-obj-model
         src="#model"
-        mtl="#texture"
+        // mtl="#texture"
+        material="src: ./images/background.jpg;"
         rotation="-90 0 0"
         side="double"
         position="0.0 0.2 0"

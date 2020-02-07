@@ -1,5 +1,5 @@
 {
-  "homepage": "https://josesentis15.github.io/AR-playground/",
+  "homepage": "https://runroom.github.io/agumented-reality/",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -7,6 +7,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "gh-pages": "^2.2.0",
     "history": "^4.10.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -20,7 +21,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

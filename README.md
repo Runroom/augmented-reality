@@ -10,7 +10,7 @@ The project is built on React.js using _create-react-app_
 * 3D Model
 
 ## Marker
-The marker used to trigger this components is the default _Hiro_ marker.
+The marker used to trigger this components is the default _Hiro_ marker.  
 <img src="public/images/hiro.png" width="300">
 
 ## Demo

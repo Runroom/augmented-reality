@@ -2,8 +2,8 @@ import React from "react";
 
 const src = './images/image.png';
 
-const Image = () => (
-  <a-scene embedded arjs="trackingMethod: best;">
+const Image = ({ debug }) => (
+  <a-scene embedded arjs={`debugUIEnabled: ${debug}; trackingMethod: best;`}>
     <a-assets>
       <img id="image" src={src} alt="" />
     </a-assets>

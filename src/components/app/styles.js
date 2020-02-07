@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const AppWrapper = styled.div`
-  .component-selector {
+  .settings {
     position: absolute;
     z-index: 10;
 
@@ -15,6 +15,13 @@ const AppWrapper = styled.div`
       top: 30px;
       right: 30px;
     }
+
+    select {
+      margin-bottom: 15px;
+      width: 100%;
+    }
+
+    input { margin-right: 10px; }
   }
 `;
 

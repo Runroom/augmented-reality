@@ -4,7 +4,7 @@ const WRAP_COUNT = 25;
 const WIDTH = 6;
 const MAX_LINES = 3;
 
-const Text = () => {
+const Text = ({ debug }) => {
   const [text, setText] = useState('');
 
   useEffect(() => {
@@ -18,7 +18,7 @@ const Text = () => {
   }, []);
 
   return (
-    <a-scene embedded arjs="trackingMethod: best;">
+    <a-scene embedded arjs={`debugUIEnabled: ${debug}; trackingMethod: best;`}>
       <a-marker preset="hiro">
         <a-entity
           scale="2 2 2"

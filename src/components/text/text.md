@@ -8,7 +8,6 @@ The text element is usually wrapped by another element, a plane or an entity (us
 ```
 <a-entity
   scale="1 1 1"
-  rotation="-90 0 0"
   geometry="primitive: plane; width: 6; height: auto;"
   material="color: white;"
 >

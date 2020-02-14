@@ -23,7 +23,6 @@ const Text = () => {
     <a-marker preset="hiro">
       <a-entity
         scale="2 2 2"
-        rotation="-90 0 0"
         geometry={`primitive: plane; width: ${WIDTH}; height: auto`}
         material="color: white;"
       >

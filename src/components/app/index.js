@@ -2,6 +2,7 @@ import React from "react";
 import { withRouter } from 'react-router';
 import { Switch, Route } from "react-router-dom";
 
+import Animation from '../animation';
 import Box from '../box';
 import Text from '../text';
 import Image from '../image';
@@ -20,6 +21,7 @@ class App extends React.Component {
     const { location: { pathname } } = this.props;
     const { debug } = this.state;
     const componentType = {
+      animation: Animation,
       box: Box,
       text: Text,
       image: Image,
@@ -52,7 +54,7 @@ class App extends React.Component {
         </div>
         <Scene>
           <Switch>
-            <Route path='/' component={Box} exact />
+            <Route path='/' component={Animation} exact />
             {Object.keys(componentType).map(key => {
               const Component = componentType[key];
 

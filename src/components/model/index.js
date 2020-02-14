@@ -16,7 +16,7 @@ const rotatingAnimation = {
   attribute: 'rotation',
   dur: 7000,
   easing: 'linear',
-  to: '-90 0 360',
+  to: '0 0 360',
   repeat: 'indefinite'
 };
 
@@ -31,7 +31,6 @@ const Model = () => (
         src="#model"
         // mtl="#texture"
         material="src: ./images/background.jpg;"
-        rotation="-90 0 0"
         side="double"
         position="0.0 0.2 0"
         scale="2 2 2"

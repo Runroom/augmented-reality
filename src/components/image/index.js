@@ -14,7 +14,6 @@ const Image = () => (
         width="4"
         height="4"
         position="0 -4 0"
-        rotation="-90 0 0"
         src="#image"
       ></a-image>
     </a-marker>

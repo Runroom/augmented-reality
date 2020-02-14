@@ -24,12 +24,10 @@ const Model = () => (
   <>
     <a-assets>
       <a-asset-item id="model" src="./models/runroom/model.obj"></a-asset-item>
-      {/* <a-asset-item id="texture" src="./images/image.png"></a-asset-item> */}
     </a-assets>
     <a-marker preset="hiro">
       <a-obj-model
         src="#model"
-        // mtl="#texture"
         material="src: ./images/background.jpg;"
         side="double"
         position="0.0 0.2 0"

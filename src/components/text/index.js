@@ -20,7 +20,7 @@ const Text = () => {
   }, []);
 
   return (
-    <a-marker preset="hiro">
+    <a-marker-camera preset="hiro">
       <a-entity
         scale="2 2 2"
         geometry={`primitive: plane; width: ${WIDTH}; height: auto`}
@@ -38,7 +38,7 @@ const Text = () => {
           text=""
         ></a-text>
       </a-entity>
-    </a-marker>
+    </a-marker-camera>
   );
 }
 

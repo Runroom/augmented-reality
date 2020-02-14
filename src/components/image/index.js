@@ -9,14 +9,14 @@ const Image = () => (
     <a-assets>
       <img id="image" src={src} alt="" />
     </a-assets>
-    <a-marker preset="hiro">
+    <a-marker-camera preset="hiro">
       <a-image
         width="4"
         height="4"
         position="0 -4 0"
         src="#image"
       ></a-image>
-    </a-marker>
+    </a-marker-camera>
   </>
 );
 

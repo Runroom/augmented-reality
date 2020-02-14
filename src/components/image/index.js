@@ -1,9 +1,11 @@
 import React from "react";
 
+import withScene from '../../hoc/withScene';
+
 const src = './images/image.png';
 
-const Image = ({ debug }) => (
-  <a-scene embedded arjs={`debugUIEnabled: ${debug}; trackingMethod: best;`}>
+const Image = () => (
+  <>
     <a-assets>
       <img id="image" src={src} alt="" />
     </a-assets>
@@ -16,8 +18,7 @@ const Image = ({ debug }) => (
         src="#image"
       ></a-image>
     </a-marker>
-    <a-camera-static />
-  </a-scene>
+  </>
 );
 
-export default Image;
+export default withScene(Image);

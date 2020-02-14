@@ -1,5 +1,7 @@
 import React from "react";
 
+import withScene from '../../hoc/withScene';
+
 // Try text in this link https://www.vectary.com/engine/engine.85c63e.html?model=196d0dbc-981b-42ec-a9ed-e1cdd175c2b5
 // const floatingAnimation = {
 //   attribute: 'position',
@@ -18,8 +20,8 @@ const rotatingAnimation = {
   repeat: 'indefinite'
 };
 
-const Model = ({ debug }) => (
-  <a-scene embedded arjs={`debugUIEnabled: ${debug}; trackingMethod: best;`}>
+const Model = () => (
+  <>
     <a-assets>
       <a-asset-item id="model" src="./models/runroom/model.obj"></a-asset-item>
       {/* <a-asset-item id="texture" src="./images/image.png"></a-asset-item> */}
@@ -37,8 +39,7 @@ const Model = ({ debug }) => (
         <a-animation {...rotatingAnimation}></a-animation>
       </a-obj-model>
     </a-marker>
-    <a-camera-static />
-  </a-scene >
+  </>
 );
 
-export default Model;
+export default withScene(Model);

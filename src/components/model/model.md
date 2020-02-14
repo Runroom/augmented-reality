@@ -19,5 +19,5 @@ We place the assets so the `<a-obj-model>` tags can reference the files. The url
 ---
 
 ## References
-For more detailed and specific reading see the [documentation](https://aframe.io/docs/1.0.0/primitives/a-obj-model.html).<br />
-More info on models can be found [here](https://aframe.io/docs/1.0.0/introduction/models.html)
+* For more detailed and specific reading see the [documentation](https://aframe.io/docs/1.0.0/primitives/a-obj-model.html).
+* More info on models can be found [here](https://aframe.io/docs/1.0.0/introduction/models.html)

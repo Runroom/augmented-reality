@@ -2,7 +2,7 @@ import React from "react";
 
 import withScene from '../../hoc/withScene';
 
-const src = './images/image.png';
+const src = './images/background.jpg';
 
 const Image = () => (
   <>
@@ -13,7 +13,7 @@ const Image = () => (
       <a-image
         width="4"
         height="4"
-        position="0 -4 0"
+        position="0 0 0"
         src="#image"
       ></a-image>
     </a-marker-camera>

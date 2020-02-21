@@ -2,23 +2,8 @@ import React from "react";
 
 import withScene from '../../hoc/withScene';
 
-// Try text in this link https://www.vectary.com/engine/engine.85c63e.html?model=196d0dbc-981b-42ec-a9ed-e1cdd175c2b5
-// const floatingAnimation = {
-//   attribute: 'position',
-//   dur: 1000,
-//   direction: 'alternate',
-//   from: '0 0 -1',
-//   to: '0 0 1',
-//   repeat: 'indefinite'
-// };
-
-const rotatingAnimation = {
-  attribute: 'rotation',
-  dur: 7000,
-  easing: 'linear',
-  to: '0 0 360',
-  repeat: 'indefinite'
-};
+const floatingAnimation = 'property: position; to: 0 0 -1; to: 0 0 1; dir: alternate; loop: true; dur: 1000;';
+const rotatingAnimation = 'property: rotation; to: 0 0 360; loop: true; dur: 7000; easing: linear';
 
 const Model = () => (
   <>
@@ -27,13 +12,13 @@ const Model = () => (
     </a-assets>
     <a-marker preset="hiro">
       <a-obj-model
+        animation={rotatingAnimation}
         src="#model"
         material="src: ./images/background.jpg;"
         side="double"
-        position="0.0 0.2 0"
+        position="0 0 0"
         scale="2 2 2"
       >
-        <a-animation {...rotatingAnimation}></a-animation>
       </a-obj-model>
     </a-marker>
   </>

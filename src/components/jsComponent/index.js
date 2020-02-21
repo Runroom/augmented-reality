@@ -47,7 +47,7 @@ class JSComponent extends React.Component {
   }
 
   updateTick = () => {
-    if (this.state.playing === true) {
+    if (this.entity.isPlaying) {
       this.entity.pause();
       this.setState({ playing: false });
     } else {

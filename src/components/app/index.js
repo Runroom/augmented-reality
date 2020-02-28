@@ -9,6 +9,7 @@ import Image from '../image';
 import Model from '../model';
 import Video from '../video';
 import JSComponent from '../jsComponent';
+import Texture from '../texture';
 
 import { capitalize } from '../../utils/helpers'
 import history from '../../utils/history'
@@ -30,6 +31,7 @@ class App extends React.Component {
       model: Model,
       video: Video,
       jsComponent: JSComponent,
+      texture: Texture,
     };
 
     return (

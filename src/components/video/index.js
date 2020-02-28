@@ -17,8 +17,10 @@ class Video extends React.Component {
       tick: () => {
         const visible = document.querySelector('a-marker').object3D.visible;
 
-        if (visible && playing) video.play();
-        else if (playing) video.pause();
+        if (playing) {
+          if (visible) video.play();
+          else video.pause();
+        }
 
         this.setState({ visible });
       }

@@ -21,8 +21,6 @@ class JSComponent extends React.Component {
         color: { type: 'color', default: '#ffff00' }
       },
       init: function () {
-        console.log('Init');
-
         var data = this.data;
         var el = this.el;
 
@@ -68,7 +66,6 @@ class JSComponent extends React.Component {
               ref={ref => this.entity = ref}
               custom-box="width: 1; height: 1; depth: 1; color: orange;"
               position="0 0 0"
-              rotation="-90 0 0"
             ></a-entity>
           </a-marker>
         </a-scene>

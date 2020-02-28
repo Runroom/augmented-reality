@@ -7,6 +7,7 @@ import Box from '../box';
 import Text from '../text';
 import Image from '../image';
 import Model from '../model';
+import Video from '../video';
 import JSComponent from '../jsComponent';
 
 import { capitalize } from '../../utils/helpers'
@@ -27,6 +28,7 @@ class App extends React.Component {
       text: Text,
       image: Image,
       model: Model,
+      video: Video,
       jsComponent: JSComponent,
     };
 

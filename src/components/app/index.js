@@ -8,6 +8,7 @@ import Text from '../text';
 import Image from '../image';
 import Model from '../model';
 import Video from '../video';
+import Audio from '../audio';
 import JSComponent from '../jsComponent';
 
 import { capitalize } from '../../utils/helpers'
@@ -29,6 +30,7 @@ class App extends React.Component {
       image: Image,
       model: Model,
       video: Video,
+      audio: Audio,
       jsComponent: JSComponent,
     };
 

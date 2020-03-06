@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Scene = styled.div`
+const SceneWrapper = styled.div`
   bottom: 0;
   position: fixed;
   top: 0;
@@ -8,4 +8,4 @@ const Scene = styled.div`
   right: 0;
 `;
 
-export { Scene };
+export { SceneWrapper };

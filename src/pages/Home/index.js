@@ -11,6 +11,7 @@ const components = [
   'image',
   'model',
   'video',
+  'sound',
   'jsComponent',
 ];
 

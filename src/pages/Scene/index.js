@@ -20,7 +20,7 @@ const componentType = {
   image: Image,
   model: Model,
   video: Video,
-  video: Sound,
+  sound: Sound,
   jsComponent: JSComponent
 };
 

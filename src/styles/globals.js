@@ -33,6 +33,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: ${theme.typography.minSize};
     font-weight: 300;
     line-height: ${space()};
+    letter-spacing: .3px;
     text-size-adjust: 100%;
   }
 
@@ -45,9 +46,6 @@ const GlobalStyle = createGlobalStyle`
   html, body {height:100%;}
 
   body {
-    color: ${theme.colors.primary900}
-    line-height: 1.5;
-    letter-spacing: .3px;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
   }

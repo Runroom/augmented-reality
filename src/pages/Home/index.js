@@ -12,7 +12,7 @@ class Home extends React.Component {
     return (
       <Page title="AR.js Examples library">
         <Wrapper>
-          <h1 class="title1">AR.js Examples library</h1>
+          <h1 className="title1">AR.js Examples library</h1>
           {structure.map(section => (
             <div
               key={`section-${section.name}`}

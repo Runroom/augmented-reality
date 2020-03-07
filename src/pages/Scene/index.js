@@ -23,6 +23,16 @@ const componentType = {
 };
 
 class Scene extends React.Component {
+  componentDidMount() {
+    document.body.style = 'margin: 0; overflow: hidden';
+  }
+
+  componentWillUnmount() {
+    const video = document.getElementById('arjs-video');
+    video.remove();
+    document.body.removeAttribute('style');
+  }
+
   render() {
     const { component } = this.props;
     const Component = componentType[component];

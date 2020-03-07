@@ -4,7 +4,6 @@ import { Switch, Route } from "react-router-dom";
 
 import Home from '../../pages/Home';
 import Scene from '../../pages/Scene';
-import Page from '../Page';
 
 import GlobalStyles from '../../styles/globals';
 
@@ -30,7 +29,7 @@ class App extends React.Component {
     const { location: { pathname } } = this.props;
 
     return (
-      <Page title="AR.js components library">
+      <>
         <GlobalStyles />
         <Switch>
           <Route path='/' component={Home} exact />
@@ -38,7 +37,7 @@ class App extends React.Component {
             <Scene component={pathname.replace('/', '')} />
           </Route>
         </Switch>
-      </Page>
+      </>
     );
   }
 }

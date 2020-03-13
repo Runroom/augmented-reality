@@ -61,7 +61,6 @@ class Sound extends React.Component {
             ></audio>
           </a-assets>
           <a-marker preset="hiro">
-            <a-box position="0 0.5 0" material="color: yellow; opacity: 0.5;"></a-box>
             <a-sound
               src="#mysound"
               audiohandler

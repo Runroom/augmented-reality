@@ -1,90 +1,64 @@
 import React from "react";
 
-import withScene from '../../hoc/withScene';
-
-const Sound = () => (
-  <>
-    <a-marker preset="hiro">
-      <a-sound src="src: url(https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3)" crossOrigin="true" autoPlay="true" position="0 2 5"></a-sound>
-    </a-marker>
-  </>
-);
-
-export default withScene(Sound);
-
-{/*import React from "react";
-
 import { Button } from './styles';
 
-class Audio extends React.Component {
-  // state = {
-  //   playing: true,
-  //   visible: false
-  // };
+const src = './audios/audio-sample.mp3';
+
+class Sound extends React.Component {
+  state = {
+    playing: false,
+    visible: false
+  };
 
   componentDidMount() {
     const AFRAME = window.AFRAME;
     const audio = this.audioElement;
-    // const { playing } = this.state;
+    const { playing } = this.state;
 
     AFRAME.registerComponent('audiohandler', {
       tick: () => {
         audio.play();
 
-        // const visible = document.querySelector('a-marker').object3D.visible;
+        const visible = document.querySelector('a-marker').object3D.visible;
 
-        // if (playing) {
-        //   if (visible) audio.play();
-        //   else audio.pause();
-        // }
+        if (playing) {
+          if (visible) audio.play();
+          else audio.pause();
+        }
 
-        // this.setState({ visible });
+        this.setState({ visible });
       }
     });
   }
 
-  // togglePlay = () => {
-  //   if (this.state.playing) {
-  //     this.audioElement.pause();
-  //     this.setState({ playing: false });
-  //   } else {
-  //     this.audioElement.play();
-  //     this.setState({ playing: true });
-  //   }
-  // }
+  togglePlay = () => {
+    if (this.state.playing) {
+      this.audioElement.pause();
+      this.setState({ playing: false });
+    } else {
+      this.audioElement.play();
+      this.setState({ playing: true });
+    }
+  }
 
-  render() {
-    // const { playing, visible } = this.state;
+  render () {
+    const { playing, visible } = this.state;
 
     return (
       <>
         {visible && (
-        <Button onClick={this.togglePlay}>
+          <Button onClick={this.togglePlay}>
             {playing ? 'Pause' : 'Play'}
           </Button>
         )}
         <a-scene>
           <a-marker preset="hiro">
-            <a-sound src="src: url(https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3)" crossOrigin="true" autoPlay="true" position="0 2 5"></a-sound>
-          </a-marker>
-          {/* <a-assets>
-            <audio
-              ref={ref => this.audioElement = ref}
-              id="myaudio"
-              controls
-              autoPlay
-            >
-              <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" crossOrigin="true" type="audio/mpeg" />
-              Your browser does not support the audio element.
-            </audio>
-          </a-assets>
-          <a-marker preset="hiro">
+            <a-box position="0 0.5 0" material="color: yellow; opacity: 0.5;"></a-box>
             <a-sound
-              src="#myaudio"
-              width="16"
-              height="9"
-              position="0 0 0"
-              scale="0.2 0.2 0.2"
+              ref={ref => this.audioElement = ref}
+              src={`src: url(${src})`}
+              crossOrigin="true"
+              autoPlay="true"
               audiohandler
             ></a-sound>
           </a-marker>
@@ -94,5 +68,4 @@ class Audio extends React.Component {
   }
 }
 
-export default Audio;
-*/}
+export default Sound;

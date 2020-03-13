@@ -40,8 +40,6 @@ class Scene extends React.Component {
     arjsTag.id = 'arjs-script';
 
     Promise.all([aframePromise, arjsPromise]).then(() => {
-      console.log('Promise loaded!');
-
       this.setState({ loaded: true });
       document.body.style = 'margin: 0; overflow: hidden';
     });

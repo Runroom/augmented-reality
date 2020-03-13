@@ -38,7 +38,7 @@ const CardsList = styled.ul`
     `}
 
     ${media.min('desktop')`
-      ${columns(3)}
+      ${columns(3, 2)}
     `}
   }
 `;

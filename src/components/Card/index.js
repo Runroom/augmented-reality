@@ -3,15 +3,17 @@ import { Link } from 'react-router-dom';
 
 import CardStyled from './styles';
 
+import placeholder from './placeholder.jpg';
+
 class Card extends React.Component {
   render() {
-    const { slug, name } = this.props;
+    const { slug, name, img = placeholder } = this.props;
 
     return (
       <CardStyled>
         <Link to={slug}>
-          <img src="" alt={`${name} component`} />
-          <p className="p-small">{name}</p>
+          <img src={img} alt={`${name} component`} />
+          <p>{name}</p>
         </Link>
       </CardStyled>
     );

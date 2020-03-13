@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
+import { space } from '../../styles/rhythm';
 import { theme } from '../../config';
 
 const PageWrapper = styled.div`
-  padding: 1rem;
+  padding: ${space()} 0;
   width: 100%;
 
   main {
@@ -11,9 +12,9 @@ const PageWrapper = styled.div`
     width: 100%;
 
     .section {
-      border-bottom: 1px solid ${theme.colors.neutro200};
-      margin: 3rem 0;
-      padding-bottom: 3rem;
+      border-bottom: 1px solid ${theme.colors.neutro300};
+      margin: ${space(2)} 0;
+      padding-bottom: ${space()};
 
       &:last-child { border-bottom: 0; }
     }

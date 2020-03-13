@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 
 import Animation from '../../arComponents/animation';
 import Box from '../../arComponents/box';
@@ -27,18 +28,16 @@ class Scene extends React.Component {
     document.body.style = 'margin: 0; overflow: hidden';
   }
 
-  componentWillUnmount() {
-    const video = document.getElementById('arjs-video');
-    video.remove();
-    document.body.removeAttribute('style');
-  }
-
   render() {
     const { component } = this.props;
     const Component = componentType[component];
 
     return (
       <Page title={`${capitalize(component)} example`}>
+        <Helmet>
+          <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+          <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/2.2.0/aframe/build/aframe-ar.js"></script>
+        </Helmet>
         <SceneWrapper>
           <Component />
         </SceneWrapper>

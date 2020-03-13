@@ -16,12 +16,7 @@ const CardStyled = styled.div`
     `}
   }
 
-  img {
-    background-color: black;
-    object-fit: cover;
-    padding-bottom: calc(100% * 9 / 16);
-  }
-
+  img { width: 100%; }
   p { margin-top: ${space(.5)}; }
 `;
 

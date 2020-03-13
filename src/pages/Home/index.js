@@ -24,7 +24,7 @@ class Home extends React.Component {
               <CardsList>
                 {section.components.map(component => (
                   <li key={`component-${component.name}`}>
-                    <Card slug={component.slug} name={component.name} />
+                    <Card slug={component.slug} name={component.name} img={component.img} />
                   </li>
                 ))}
               </CardsList>

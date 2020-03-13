@@ -11,11 +11,11 @@ class Video extends React.Component {
   componentDidMount() {
     const AFRAME = window.AFRAME;
     const video = this.videoElement;
-    const { playing } = this.state;
 
     AFRAME.registerComponent('vidhandler', {
       tick: () => {
         const visible = document.querySelector('a-marker').object3D.visible;
+        const { playing } = this.state;
 
         if (playing) {
           if (visible) video.play();

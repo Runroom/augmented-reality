@@ -6,20 +6,18 @@ const src = './audios/audio-sample.mp3';
 
 class Sound extends React.Component {
   state = {
-    playing: false,
+    playing: true,
     visible: false
   };
 
   componentDidMount() {
     const AFRAME = window.AFRAME;
     const audio = this.audioElement;
-    const { playing } = this.state;
 
     AFRAME.registerComponent('audiohandler', {
       tick: () => {
-        audio.play();
-
         const visible = document.querySelector('a-marker').object3D.visible;
+        const { playing } = this.state;
 
         if (playing) {
           if (visible) audio.play();
@@ -32,6 +30,8 @@ class Sound extends React.Component {
   }
 
   togglePlay = () => {
+    console.log(this.audioElement);
+
     if (this.state.playing) {
       this.audioElement.pause();
       this.setState({ playing: false });
@@ -52,13 +52,18 @@ class Sound extends React.Component {
           </Button>
         )}
         <a-scene>
+        <a-assets>
+            <audio
+              ref={ref => this.audioElement = ref}
+              id="mysound"
+              crossOrigin="true"
+              src={src}
+            ></audio>
+          </a-assets>
           <a-marker preset="hiro">
             <a-box position="0 0.5 0" material="color: yellow; opacity: 0.5;"></a-box>
             <a-sound
-              ref={ref => this.audioElement = ref}
-              src={`src: url(${src})`}
-              crossOrigin="true"
-              autoPlay="true"
+              src="#mysound"
               audiohandler
             ></a-sound>
           </a-marker>

@@ -1,5 +1,19 @@
 import React from "react";
 
+import withScene from '../../hoc/withScene';
+
+const Sound = () => (
+  <>
+    <a-marker preset="hiro">
+      <a-sound src="src: url(https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3)" crossOrigin="true" autoPlay="true" position="0 2 5"></a-sound>
+    </a-marker>
+  </>
+);
+
+export default withScene(Sound);
+
+{/*import React from "react";
+
 import { Button } from './styles';
 
 class Audio extends React.Component {
@@ -44,11 +58,11 @@ class Audio extends React.Component {
 
     return (
       <>
-        {/* {visible && ( */}
-        {/* <Button onClick={this.togglePlay}>
+        {visible && (
+        <Button onClick={this.togglePlay}>
             {playing ? 'Pause' : 'Play'}
-          </Button> */}
-        {/* )} */}
+          </Button>
+        )}
         <a-scene>
           <a-marker preset="hiro">
             <a-sound src="src: url(https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3)" crossOrigin="true" autoPlay="true" position="0 2 5"></a-sound>
@@ -73,7 +87,7 @@ class Audio extends React.Component {
               scale="0.2 0.2 0.2"
               audiohandler
             ></a-sound>
-          </a-marker> */}
+          </a-marker>
         </a-scene>
       </>
     );
@@ -81,3 +95,4 @@ class Audio extends React.Component {
 }
 
 export default Audio;
+*/}

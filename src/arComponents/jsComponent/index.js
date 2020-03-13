@@ -7,9 +7,7 @@ class JSComponent extends React.Component {
     playing: true
   };
 
-  constructor(props) {
-    super(props);
-
+  componentDidMount() {
     const AFRAME = window.AFRAME;
     const THREE = window.THREE;
 

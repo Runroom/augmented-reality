@@ -30,10 +30,9 @@ class App extends React.Component {
 
     return (
       <>
-        XXX - {process.env.NODE_ENV}
         <GlobalStyles />
         <Switch>
-          <Route path='/' component={Home} exact />
+          <Route path='/augmented-reality/' component={Home} exact />
           <Route>
             <Scene component={pathname.replace('/', '')} />
           </Route>

@@ -30,10 +30,11 @@ class App extends React.Component {
 
     return (
       <>
+        xxx - { pathname.replace(process.env.REACT_APP_BASE_PATH, '') }
         <GlobalStyles />
         <Switch>
           <Route path={`${process.env.REACT_APP_BASE_PATH}:slug`}>
-            <Scene component={pathname.replace('/', '')} />
+            <Scene component={pathname.replace(process.env.REACT_APP_BASE_PATH, '')} />
           </Route>
           <Route path={process.env.REACT_APP_BASE_PATH} component={Home} exact />
         </Switch>

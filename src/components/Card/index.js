@@ -11,7 +11,8 @@ class Card extends React.Component {
 
     return (
       <CardStyled>
-        <Link to={`${process.env.REACT_BASE_PATH}/${slug}`}>
+        <Link to={slug}>
+        {/* <Link to={`${process.env.REACT_BASE_PATH}/${slug}`}> */}
           <img src={img} alt={`${name} component`} />
           <p>{name}</p>
         </Link>

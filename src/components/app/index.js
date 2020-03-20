@@ -32,7 +32,7 @@ class App extends React.Component {
       <>
         <GlobalStyles />
         <Switch>
-          <Route path={`${process.env.REACT_BASE_PATH}/`} component={Home} exact />
+          <Route path="/" component={Home} exact />
           <Route>
             <Scene component={pathname.replace('/', '')} />
           </Route>

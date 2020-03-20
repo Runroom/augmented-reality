@@ -7,6 +7,6 @@ import history from './utils/history'
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<Router history={history} basename={process.env.REACT_BASE_PATH}><App /></Router>, document.getElementById('root'));
+ReactDOM.render(<Router history={history}><App /></Router>, document.getElementById('root'));
 
 serviceWorker.unregister();

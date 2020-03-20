@@ -30,8 +30,6 @@ class Sound extends React.Component {
   }
 
   togglePlay = () => {
-    console.log(this.audioElement);
-
     if (this.state.playing) {
       this.audioElement.pause();
       this.setState({ playing: false });
@@ -52,7 +50,7 @@ class Sound extends React.Component {
           </Button>
         )}
         <a-scene>
-        <a-assets>
+          <a-assets>
             <audio
               ref={ref => this.audioElement = ref}
               id="mysound"

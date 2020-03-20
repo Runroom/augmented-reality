@@ -1,43 +1,39 @@
-# Video component
-A component which renders a video element in a plane geometry. It can be also rendered as a texture of an entity element.
+# Sound component
+A component which renders a sound element. The sound elements plays since the scene is rendered so in order to play / pause the audio it can be done by registering the component in AFRAME
 
 ## Usage
 ### Markdown
-We place in the assets the `<video>` tag that needs to be used.
+We place in the assets the `<audio>` tag that needs to be used.
 ```
 <a-assets>
-  <video
-    id="myvideo"
-    crossorigin="true"
-    src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-  ></video>
+  <audio
+    id="mysound"
+    crossOrigin="true"
+    src='./audios/audio-sample.mp3';
+  ></audio>
 </a-assets>
 <a-marker preset="hiro">
-  <a-video
-    src="#myvideo"
-    width="16"
-    height="9"
-    position="0 0 0"
-    scale="0.2 0.2 0.2"
-    vidHandler
-  ></a-video>
+  <a-sound
+    src="#mysound"
+    audiohandler
+  ></a-sound>
 </a-marker>
 ```
 
 ### Javascript
 The component can be registered using `AFRAME.registerComponent` and use all the features that video allow.
 ```
-AFRAME.registerComponent('vidhandler', {
+AFRAME.registerComponent('audiohandler', {
   tick: () => {
     const visible = document.querySelector('a-marker').object3D.visible;
 
-    if (visible) video.play();
-    else video.pause();
+    if (visible) audio.play();
+    else audio.pause();
   }
 });
 ```
 
 ## References
-* For more detailed and specific reading see the [documentation](https://aframe.io/docs/1.0.0/primitives/a-video.html)
-* Video as material texture [here](https://aframe.io/docs/1.0.0/components/material.html#video-textures)
+* For more detailed and specific reading see the [documentation](https://aframe.io/docs/1.0.0/primitives/a-sound.html)
 * Registering a component using AFRAME [here](https://aframe.io/docs/1.0.0/introduction/writing-a-component.html)
+* Sound attached to another entity as a background sound [here](https://aframe.io/docs/1.0.0/components/sound.html)

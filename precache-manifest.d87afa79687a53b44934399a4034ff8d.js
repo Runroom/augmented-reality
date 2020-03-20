@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7e158e99882c416dd52dbbea0516c245",
+    "revision": "d2c84f9251c01800ae9554792becd3e0",
     "url": "/augmented-reality/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/augmented-reality/static/js/2.dda4fda6.chunk.js.LICENSE"
   },
   {
-    "revision": "d2ae9d7574150a0539e7",
-    "url": "/augmented-reality/static/js/main.31407543.chunk.js"
+    "revision": "d9f66f1d85fcbebbb1ef",
+    "url": "/augmented-reality/static/js/main.0328fdf0.chunk.js"
   },
   {
     "revision": "e2a24235f348f72b0a7f",

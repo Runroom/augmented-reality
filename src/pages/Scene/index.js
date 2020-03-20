@@ -4,6 +4,7 @@ import Animation from '../../arComponents/Animation';
 import Box from '../../arComponents/Box';
 import Text from '../../arComponents/Text';
 import Image from '../../arComponents/Image';
+import Gif from '../../arComponents/Gif';
 import Model from '../../arComponents/Model';
 import Video from '../../arComponents/Video';
 import Sound from '../../arComponents/Sound';
@@ -19,6 +20,7 @@ const componentType = {
   box: Box,
   text: Text,
   image: Image,
+  gif: Gif,
   model: Model,
   video: Video,
   sound: Sound,
@@ -33,15 +35,20 @@ class Scene extends React.Component {
   componentDidMount() {
     const aframeTag = document.createElement('script');
     const arjsTag = document.createElement('script');
+    const gifTag = document.createElement('script');
     const aframePromise = loadScriptAsync(aframeTag, 'https://aframe.io/releases/1.0.4/aframe.min.js');
     const arjsPromise = loadScriptAsync(arjsTag, 'https://cdn.rawgit.com/jeromeetienne/AR.js/2.2.0/aframe/build/aframe-ar.js');
+    const gifPromise = loadScriptAsync(gifTag, 'https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js');
 
     aframeTag.id = 'aframe-script';
     arjsTag.id = 'arjs-script';
+    gifTag.id = 'aframe-gif-script';
 
     Promise.all([aframePromise, arjsPromise]).then(() => {
-      this.setState({ loaded: true });
-      document.body.style = 'margin: 0; overflow: hidden';
+      gifPromise.then(() => {
+        this.setState({ loaded: true });
+        document.body.style = 'margin: 0; overflow: hidden';
+      });
     });
   }
 

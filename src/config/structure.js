@@ -15,6 +15,10 @@ const structure = [
         slug: '/image'
       },
       {
+        name: 'Gif',
+        slug: '/gif'
+      },
+      {
         name: 'Model',
         slug: '/model'
       },

@@ -1503,6 +1503,10 @@ adjust-sourcemap-loader@2.0.0:
     object-path "0.11.4"
     regex-parser "2.2.10"
 
+aframe-gif-shader@^0.9.1:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/aframe-gif-shader/-/aframe-gif-shader-0.9.1.tgz#9fceeaf18f0b545d4ce8737acabd4072d84202c2"
+
 aggregate-error@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/aggregate-error/-/aggregate-error-3.0.1.tgz#db2fe7246e536f40d9b5442a39e117d7dd6a24e0"

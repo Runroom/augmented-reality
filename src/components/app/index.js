@@ -34,6 +34,7 @@ class App extends React.Component {
         <Switch>
           <Route path="/" component={Home} exact />
           <Route>
+          {/* <Route path={process.env.REACT_APP_BASE_PATH} component={Home} exact /> */}
             <Scene component={pathname.replace('/', '')} />
           </Route>
         </Switch>

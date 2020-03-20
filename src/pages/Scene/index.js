@@ -57,8 +57,6 @@ class Scene extends React.Component {
     const { loaded } = this.state;
     const Component = componentType[component];
 
-    console.log('Receiving component: ', component);
-
     return loaded ? (
       <Page title={`${capitalize(component)} example`}>
         <SceneWrapper>

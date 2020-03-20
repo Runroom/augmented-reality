@@ -8,6 +8,7 @@ import Model from '../../arComponents/Model';
 import Video from '../../arComponents/Video';
 import Sound from '../../arComponents/Sound';
 import JSComponent from '../../arComponents/JSComponent';
+import Loader from '../../components/Loader';
 import Page from '../../components/Page';
 
 import { capitalize, loadScriptAsync } from '../../utils/helpers';
@@ -63,7 +64,7 @@ class Scene extends React.Component {
           <Component />
         </SceneWrapper>
       </Page>
-    ) : 'Loading...';
+    ) : (<Loader />);
   }
 };
 

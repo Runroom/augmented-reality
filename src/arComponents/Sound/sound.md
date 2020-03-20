@@ -9,7 +9,7 @@ We place in the assets the `<audio>` tag that needs to be used.
   <audio
     id="mysound"
     crossOrigin="true"
-    src='./audios/audio-sample.mp3';
+    src='./audio-sample.mp3';
   ></audio>
 </a-assets>
 <a-marker preset="hiro">

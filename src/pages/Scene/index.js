@@ -1,13 +1,13 @@
 import React from 'react';
 
-import Animation from '../../arComponents/animation';
-import Box from '../../arComponents/box';
-import Text from '../../arComponents/text';
-import Image from '../../arComponents/image';
-import Model from '../../arComponents/model';
-import Video from '../../arComponents/video';
+import Animation from '../../arComponents/Animation';
+import Box from '../../arComponents/Box';
+import Text from '../../arComponents/Text';
+import Image from '../../arComponents/Image';
+import Model from '../../arComponents/Model';
+import Video from '../../arComponents/Video';
 import Sound from '../../arComponents/Sound';
-import JSComponent from '../../arComponents/jsComponent';
+import JSComponent from '../../arComponents/JSComponent';
 import Page from '../../components/Page';
 
 import { capitalize, loadScriptAsync } from '../../utils/helpers';

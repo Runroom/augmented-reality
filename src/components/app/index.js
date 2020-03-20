@@ -33,9 +33,9 @@ class App extends React.Component {
         <GlobalStyles />
         <Switch>
           <Route path='/' component={Home} exact />
-          <Route>
+          {/* <Route>
             <Scene component={pathname.replace('/', '')} />
-          </Route>
+          </Route> */}
         </Switch>
       </>
     );

@@ -4,31 +4,31 @@ const structure = [
     components: [
       {
         name: 'Box',
-        slug: '/box'
+        slug: 'box'
       },
       {
         name: 'Text',
-        slug: '/text'
+        slug: 'text'
       },
       {
         name: 'Image',
-        slug: '/image'
+        slug: 'image'
       },
       {
         name: 'Model',
-        slug: '/model'
+        slug: 'model'
       },
       {
         name: 'Video',
-        slug: '/video'
+        slug: 'video'
       },
       {
         name: 'Sound',
-        slug: '/sound'
+        slug: 'sound'
       },
       {
         name: 'JsComponent',
-        slug: '/jsComponent'
+        slug: 'jsComponent'
       }
     ]
   },
@@ -37,7 +37,7 @@ const structure = [
     components: [
       {
         name: 'Animation',
-        slug: '/animation'
+        slug: 'animation'
       }
     ]
   }

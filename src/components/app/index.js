@@ -30,12 +30,13 @@ class App extends React.Component {
 
     return (
       <>
+        XXX - {process.env.NODE_ENV}
         <GlobalStyles />
         <Switch>
           <Route path='/' component={Home} exact />
-          {/* <Route>
+          <Route>
             <Scene component={pathname.replace('/', '')} />
-          </Route> */}
+          </Route>
         </Switch>
       </>
     );

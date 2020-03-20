@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/augmented-reality/static/js/main.765196fe.chunk.js",
-    "main.js.map": "/augmented-reality/static/js/main.765196fe.chunk.js.map",
+    "main.js": "/augmented-reality/static/js/main.466be2c2.chunk.js",
+    "main.js.map": "/augmented-reality/static/js/main.466be2c2.chunk.js.map",
     "runtime-main.js": "/augmented-reality/static/js/runtime-main.9541b78e.js",
     "runtime-main.js.map": "/augmented-reality/static/js/runtime-main.9541b78e.js.map",
     "static/js/2.e452f2cf.chunk.js": "/augmented-reality/static/js/2.e452f2cf.chunk.js",
     "static/js/2.e452f2cf.chunk.js.map": "/augmented-reality/static/js/2.e452f2cf.chunk.js.map",
     "index.html": "/augmented-reality/index.html",
-    "precache-manifest.0277817c4355372c7f674daf6464c607.js": "/augmented-reality/precache-manifest.0277817c4355372c7f674daf6464c607.js",
+    "precache-manifest.cd1852b1a817e883e155fd0aea3a723f.js": "/augmented-reality/precache-manifest.cd1852b1a817e883e155fd0aea3a723f.js",
     "service-worker.js": "/augmented-reality/service-worker.js",
     "static/js/2.e452f2cf.chunk.js.LICENSE": "/augmented-reality/static/js/2.e452f2cf.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.9541b78e.js",
     "static/js/2.e452f2cf.chunk.js",
-    "static/js/main.765196fe.chunk.js"
+    "static/js/main.466be2c2.chunk.js"
   ]
 }

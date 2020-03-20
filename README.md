@@ -14,7 +14,7 @@ The marker used to trigger this components is the default _Hiro_ marker.
 <img src="public/images/hiro.png" width="300">
 
 ## Demo
-[https://runroom.github.io/agumented-reality/](https://runroom.github.io/agumented-reality/)
+[https://runroom.github.io/augmented-reality/](https://runroom.github.io/augmented-reality/)
 
 ## Installation and usage
 Clone the repo and run the following commands. The app will run on port 3000 by default:

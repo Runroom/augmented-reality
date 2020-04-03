@@ -38,6 +38,10 @@ const structure = [
       {
         name: 'Animation',
         slug: 'animation'
+      },
+      {
+        name: 'Weather',
+        slug: 'weather'
       }
     ]
   }

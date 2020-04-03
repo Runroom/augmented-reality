@@ -7,6 +7,7 @@ import Image from '../../arComponents/Image';
 import Model from '../../arComponents/Model';
 import Video from '../../arComponents/Video';
 import Sound from '../../arComponents/Sound';
+import Weather from '../../arComponents/Weather';
 import JSComponent from '../../arComponents/JSComponent';
 import Loader from '../../components/Loader';
 import Page from '../../components/Page';
@@ -23,7 +24,8 @@ const componentType = {
   model: Model,
   video: Video,
   sound: Sound,
-  jsComponent: JSComponent
+  jsComponent: JSComponent,
+  weather: Weather
 };
 
 class Scene extends React.Component {

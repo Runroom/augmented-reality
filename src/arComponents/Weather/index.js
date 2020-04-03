@@ -1,10 +1,9 @@
 import React from 'react';
 
-import { capitalize } from '../../utils/helpers';
 import getWeather from '../../utils/weather';
 import theme from '../../config/theme';
 
-const WRAP_COUNT = 25;
+const WRAP_COUNT = 10;
 const WIDTH = 3;
 
 class Weather extends React.Component {
@@ -17,13 +16,6 @@ class Weather extends React.Component {
   componentDidMount() {
     getWeather('Barcelona')
       .then(weather => {
-        const today = new Date(weather.date);
-
-        let text = `${capitalize(weather.description)}\n`;
-        // text += `City: ${weather.city}, ${weather.country}\n`;
-        text += `Today: ${today.getDate()}-${(today.getMonth() + 1)}-${today.getFullYear()}\n`;
-        text += `Temperature: ${weather.temperature}`
-
         var downloadingImage = new Image();
         downloadingImage.onload = () => {
           this.setState({ loaded: true, weather, icon: downloadingImage.src });

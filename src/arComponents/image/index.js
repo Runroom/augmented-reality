@@ -2,7 +2,8 @@ import React from "react";
 
 import withScene from '../../hoc/withScene';
 
-const src = './images/background.jpg';
+// const src = './images/background.jpg';
+const src = 'http://openweathermap.org/img/w/02d.png';
 
 const Image = () => (
   <>

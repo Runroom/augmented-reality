@@ -5,7 +5,8 @@ const mapDataToWeatherInterface = data => {
     date: data.dt * 1000,
     humidity: data.main.humidity,
     icon_id: data.weather[0].id,
-    temperature: data.main.temp,
+    icon: data.weather[0].icon,
+    temperature: parseInt(data.main.temp),
     description: data.weather[0].description,
     wind_speed: Math.round(data.wind.speed * 3.6), // convert from m/s to km/h
     condition: data.cod

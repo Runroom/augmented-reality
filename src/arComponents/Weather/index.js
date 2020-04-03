@@ -3,7 +3,7 @@ import React from 'react';
 import getWeather from '../../utils/weather';
 import theme from '../../config/theme';
 
-const WRAP_COUNT = 10;
+const WRAP_COUNT = 25;
 const WIDTH = 3;
 
 class Weather extends React.Component {
@@ -57,7 +57,7 @@ class Weather extends React.Component {
               scale="1.2 1.2 1.2"
             ></a-image>
             <a-text
-              geometry={`primitive: plane; width: ${WIDTH / 2}; height: auto;`}
+              geometry={`primitive: plane; width: ${WIDTH}; height: auto;`}
               material="color: transparent; opacity: 0;"
               wrap-count={WRAP_COUNT}
               align="left"
@@ -65,16 +65,18 @@ class Weather extends React.Component {
               color={theme.colors.neutro900}
               value={`${weather.temperature}*C`}
               position={`-1.6 0 0`}
-              scale="2.5 2.5 2.5"
+              scale="3 3 3"
             ></a-text>
             <a-text
-              geometry={`primitive: plane; width: ${WIDTH / 2}; height: auto;`}
+              geometry={`primitive: plane; width: ${WIDTH}; height: auto;`}
               material="color: transparent; opacity: 0;"
+              wrap-count={WRAP_COUNT}
               align="left"
               anchor="left"
               color={theme.colors.neutro600}
               value={`${weather.description.toUpperCase()}`}
               position={`-${WIDTH / 2} -1 0`}
+              scale=".8 .8 .8"
             ></a-text>
           </a-entity>
         </a-marker-camera>

@@ -37,7 +37,7 @@ class Weather extends React.Component {
             geometry={`primitive: plane; height: ${WIDTH}; width: ${WIDTH * 1.2}`}
             material={`color: ${theme.colors.neutro100}`}
             position="0 0 0"
-            scale=".5 .5 .5"
+            scale="1 1 1"
           >
             <a-text
               geometry={`primitive: plane; width: ${WIDTH}; height: auto;`}

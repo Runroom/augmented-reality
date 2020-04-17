@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/augmented-reality/precache-manifest.8d0ed043374e57fc6ea03b9b87746f42.js"
+  "/augmented-reality/precache-manifest.0841308656158903ff2fb00be2f98348.js"
 );
 
 self.addEventListener('message', (event) => {

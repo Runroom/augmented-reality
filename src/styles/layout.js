@@ -33,12 +33,14 @@ const CardsList = styled.ul`
   flex-wrap: wrap;
 
   li {
+    ${columns(2)}
+
     ${media.min('tablet')`
-      ${columns(2)}
+      ${columns(3)}
     `}
 
     ${media.min('desktop')`
-      ${columns(3, 2)}
+      ${columns(4, 2)}
     `}
   }
 `;

@@ -41,7 +41,8 @@ const structure = [
       },
       {
         name: 'Weather',
-        slug: 'weather'
+        slug: 'weather',
+        img: './images/weather.jpg'
       }
     ]
   }

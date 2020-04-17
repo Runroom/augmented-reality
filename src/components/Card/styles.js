@@ -5,8 +5,6 @@ import { hover } from '../../styles/helpers';
 import { space } from '../../styles/rhythm';
 
 const CardStyled = styled.div`
-  margin-bottom: ${space()};
-
   a {
     display: block;
     text-decoration: none;

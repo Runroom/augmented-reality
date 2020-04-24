@@ -19,11 +19,13 @@ const structure = [
       },
       {
         name: 'Model',
-        slug: 'model'
+        slug: 'model',
+        img: './images/model.jpg'
       },
       {
         name: 'Video',
-        slug: 'video'
+        slug: 'video',
+        img: './images/video.jpg'
       },
       {
         name: 'Sound',
@@ -40,7 +42,8 @@ const structure = [
     components: [
       {
         name: 'Animation',
-        slug: 'animation'
+        slug: 'animation',
+        img: './images/animation.jpg'
       },
       {
         name: 'Weather',

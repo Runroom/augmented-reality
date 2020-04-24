@@ -33,7 +33,8 @@ const structure = [
       },
       {
         name: 'JsComponent',
-        slug: 'jsComponent'
+        slug: 'jsComponent',
+        img: './images/jsComponent.jpg'
       }
     ]
   },

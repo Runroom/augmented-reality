@@ -32,14 +32,14 @@ const Animation = () => {
             material="side: double; color: #5214FF; opacity: 0.7;"
             position="0 -0.5 0"
             rotation="90 0 0"
-            scale="0.75 0.75 0.75"
+            scale="1 1 1"
           >
           </a-entity>
         ))}
         <a-entity
           animation__scale={`property: scale; from: 0.25 0.25 0.25; to: 0.9 0.9 0.9; dur: 800; delay: 6600;`}
           position="0 0 0"
-          scale="0 0 0"
+          scale="1.25 1.25 1.25"
         >
           <a-entity
             animation={`property: material.opacity; from: 0; to: .3; dur: 100; delay: 6600;`}

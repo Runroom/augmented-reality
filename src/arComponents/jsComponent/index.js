@@ -63,7 +63,7 @@ class JSComponent extends React.Component {
             <a-entity
               ref={ref => this.entity = ref}
               custom-box="width: 1; height: 1; depth: 1; color: orange;"
-              position="0 0 0"
+              position="-1 -1 -2"
             ></a-entity>
           </a-marker>
         </a-scene>

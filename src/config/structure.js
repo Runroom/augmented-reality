@@ -4,7 +4,8 @@ const structure = [
     components: [
       {
         name: 'Box',
-        slug: 'box'
+        slug: 'box',
+        img: './images/box.jpg'
       },
       {
         name: 'Text',
@@ -13,7 +14,8 @@ const structure = [
       },
       {
         name: 'Image',
-        slug: 'image'
+        slug: 'image',
+        img: './images/image.jpg'
       },
       {
         name: 'Model',

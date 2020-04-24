@@ -8,7 +8,8 @@ const structure = [
       },
       {
         name: 'Text',
-        slug: 'text'
+        slug: 'text',
+        img: './images/text.jpg'
       },
       {
         name: 'Image',

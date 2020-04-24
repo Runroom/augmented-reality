@@ -13,9 +13,9 @@ const Model = () => (
       <a-obj-model
         animation={rotatingAnimation}
         src="#model"
-        material="src: ./images/background.jpg;"
+        material="src: ./images/image.jpg;"
         side="double"
-        position="-1 -2 -1"
+        position="-1 -4 -1"
         scale="2.5 2.5 2.5"
       >
       </a-obj-model>

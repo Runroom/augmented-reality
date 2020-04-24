@@ -15,8 +15,8 @@ const Model = () => (
         src="#model"
         material="src: ./images/background.jpg;"
         side="double"
-        position="-1 -1 -1"
-        scale="1 1 1"
+        position="-1 -2 -1"
+        scale="2.5 2.5 2.5"
       >
       </a-obj-model>
     </a-marker>

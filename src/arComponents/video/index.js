@@ -61,8 +61,8 @@ class Video extends React.Component {
               src="#myvideo"
               width="16"
               height="9"
-              position="0 0 0"
-              scale="0.2 0.2 0.2"
+              position="-1 -1 -1"
+              scale="0.5 0.5 0.5"
               vidHandler
             ></a-video>
           </a-marker>

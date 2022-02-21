@@ -1,4 +1,4 @@
-# Augmented Reality - AR.js
+# [DEPRECATED] Augmented Reality - AR.js
 
 An _augmented reality_ component library created using the AR.js library, based on Three.js.
 The project is built on React.js using _create-react-app_
